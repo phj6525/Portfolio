@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=0.5, maximum-scale=2">
+	<title>Jun's Portfolio</title>
+<link rel="stylesheet" href="./css/default.css">
+</head>
+<body>
+<header class="clearfix">
+	<h1 class="p816"><a href="#">Jun's Portfolio</a></h1>
+	<nav class="gnb">
+		<a href="#" class="btn"><span>menu</span></a>
+		<ul>
+			<li><a href="#portfolio" class="p816">Portfolio</a></li>
+			<li><a href="#aboutme" class="p816">About Me</a></li>
+			<li><a href="#contact" class="p816">Contact</a></li>
+		</ul>
+	</nav>
+</header>
+<div class="mainImg">
+	<img src="./img/main.jpg" alt="">
+	<p><span class="box p816">Jun's</span> <span class="txt">Portfolio</span></p>
+</div>
+<div class="con">
+	<section id="portfolio">
+		<h1><a href="#">Portfolio</a></h1>
+		<div class="imgArea clearfix">
+			<div class="img p88">
+				<a href="./html/calculrator.html"><img src="./img/calculator.png" alt=""></a>
+				<a href="./html/calculrator.html"><span class="p816">Calculator</span></a>
+			</div>
+			<div class="img p88">
+				<a href="./html/space.html"><img src="./img/spacegame.png" alt=""></a>
+				<a href="./html/space.html"><span class="p816">Game</span></a>
+			</div>
+		</div>
+	</section>
+	<section id="aboutme"> 
+		<h1><a href="#">About Me</a></h1>
+		<p class="p88"></p>
+		<div class="imgArea clearfix">
+			<div class="img p88">
+				<img src="./img/jun.jpg" alt="">
+				<p class="name">박형준</p>
+				<p>안녕하세요</p>
+			</div>
+		</div>
+	</section>
+	<section id="contact">
+		<h1><a href="#">Contact</a></h1>
+		<p class="p88"></p>
+		<form class="p88">
+			<label for="na" class="hidden">name</label>
+			<input type="text" name="name" placeholder="Name" id="na">			
+			<label for="em" class="hidden">email</label>
+			<input type="text" name="email" placeholder="Email" id="em">		
+			<label for="su" class="hidden">subject</label>
+			<input type="text" name="subject" placeholder="Subject" id="su">		
+			<label for="co" class="hidden">comment</label>
+			<input type="text" name="comment" placeholder="Comment" id="co">
+		</form>
+	</section>
+</div>
+<footer>
+	<div class="wrap">
+		<small>Copyright &copy; PHJ. All rights reserved.</small>
+		<a href="#">top ▲</a>
+	</div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="./js/gnb.js"></script>
+</body>
+</html>
