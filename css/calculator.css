@@ -1,0 +1,71 @@
+@charset "utf-8";
+body {
+	background: url("../img/math.jpg") center repeat;
+	background-size: 100%;
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+}
+.cal {
+	width: 375px;
+	text-align: center;
+	border: 5px solid white;
+	border-radius: 30px;
+	padding: 10px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%)
+}
+input {
+	display: block;
+	width: 350px;
+	height: 80px;
+	margin: 20px auto;
+	border: 5px solid yellow;
+	border-radius: 20px;
+	background-color: black;
+	padding: 0 10px;
+	color: white;
+	text-align: right;
+	font: bold 3em "Godic";
+}
+::placeholder {
+	color: white;
+}
+button {
+	width: 80px;
+	height: 65px;
+	background-color: black;
+	color: white;
+	border: 5px solid white;
+	border-radius: 20px;
+	cursor: pointer;
+	font: bold 2.5em "Godic";
+	text-align: center;
+	display: table-cell;
+	vertical-align: top;
+	margin-bottom: 10px;
+
+}
+button:active {
+	border:3px solid yellowgreen;
+	color: yellowgreen;
+	font: bold 2em "Godic";
+
+}
+.ac {
+	border:5px solid red;
+	color: red;
+}
+.bs {
+	border:5px solid blue;
+	color: blue;
+}
+.zero {
+	width: 150px;
+}
+.same {
+	border:5px solid orange;
+	color: orange;
+}

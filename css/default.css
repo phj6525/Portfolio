@@ -1,0 +1,288 @@
+@charset "utf-8";
+
+/* html reset */
+* {
+	box-sizing: border-box;
+}
+article, aside, figcaption, figure, footer, header, main, nav, section { 
+    display:block; 
+}
+body, input, button, select, textarea {
+	font-family: verdana, sans-serif;
+}
+body {
+	margin: 0;
+	font-size: 15px;
+	line-height: 1.5;
+	color: #fff;
+	background: #000;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-family: "Segoe UI", Arial, sans-serif;
+	font-weight: normal;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+img {
+	vertical-align: top;
+	border: none;
+	max-width: 100%;
+}
+address {
+	font-style: normal;
+}
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.hidden {
+	position: absolute;
+	left: -9999px;
+	top: -9999px;
+	font-size: 0.1%;
+	line-height: 0.1%;
+	width: 0.1%;
+	height: 0.1%;
+	overflow: hidden;
+}
+/*Add*/
+.p816 {
+	padding: 8px 16px;
+}
+.p88 {
+	padding-left: 8px;
+	padding-right: 8px;
+}
+input {
+	border: none;
+}
+span:hover {
+	color: skyblue;
+}
+.wrap {
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+/* All */
+/*header*/
+header {
+	padding: 8px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+	position: fixed;
+	width: 100%;
+	background: #000;
+	z-index: 99999;
+	font-size: 0;
+}
+header h1 {
+	letter-spacing: 4px;
+	font-size: 15px;
+	float: left;
+}
+header h1 a:hover {
+	color: green;
+}
+header .gnb {
+	float: right;
+}
+header .gnb ul a {
+	background: #000;
+	color: #fff;
+	font-size: 15px;
+	display: block;
+}
+header .gnb ul a:hover {
+	color: skyblue;
+}
+.mainImg {
+	padding-top: 54px;
+	position: relative;
+	max-width: 1500px;
+	margin: auto;
+}
+.mainImg p {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	margin-top: 27px;
+	color: #fff;
+	font-size: 36px;
+}
+.mainImg p .box {
+	display: inline-block;
+	background: #000;
+	opacity: 0.7;
+	font-weight: bold;
+}
+.con {
+	padding-left: 16px;
+	padding-right: 16px;
+	margin: auto;
+	max-width: 1000px;
+}
+.con h1 a:hover {
+	color: green;
+}
+.con>section>h1 {
+	font-size: 24px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 15px;
+	margin: 60px 8px 30px;
+}
+.con #portfolio .img {
+	position: relative;
+	margin-bottom: 16px;
+}
+.con #portfolio .img span {
+	color: #fff;
+	background: #000;
+	border: 1px solid #fff;
+	position: absolute;
+	left:8px;
+	top: 0;
+}
+.con #portfolio .img span:hover {
+	color: skyblue;
+	border: 1px solid skyblue;
+}
+.con #aboutme .img {
+	margin-top: 30px;
+}
+.con #aboutme .name {
+	font-size: 24px;
+	margin-top: 15px;
+}
+.con #aboutme .job {
+	color: #a8a8a8;
+}
+.con #aboutme button {
+	padding: 10px;
+	background: #f1f1f1;
+	width: 100%;
+	border: none;
+	cursor: pointer;
+}
+.con #aboutme button:hover {
+	background: #ccc;
+}
+.con #contact input {
+	display: block;
+}
+.con #contact input[type="text"] {
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 16px;
+	border-bottom: 1px solid #ccc;
+}
+.con #contact input[type="text"]::placeholder {
+	color: #a8a8a8;
+	font-size: 12px;
+}
+.con #contact input[type="submit"] {
+	margin-top: 20px;
+	background: #000;
+	color: #fff;
+	cursor: pointer;
+}
+.con #contact input[type="submit"]:hover {
+	background: #ccc;
+	color: #000;
+}
+footer {
+	padding: 20px 0;
+	text-align: center;
+	margin-top: 50px;
+	background: #000;
+	color: #fff;
+}
+small {
+	padding-left: 30px;
+}
+footer div a {
+	padding-right: 30px;
+}
+/* Mobile */
+.gnb .btn {
+	width: 25px;
+	display: block;
+	margin-top: 8px;
+	margin-right: 16px;
+}
+.gnb .btn:before, .gnb .btn:after {
+	content: "";
+	background: #fff;
+	height: 3px;
+	display: block;
+}
+.gnb .btn span {
+	background: #fff;
+	height: 3px;
+	display: block;
+	overflow: hidden;
+	margin: 5px 0;
+}
+.gnb ul {
+	position: absolute;
+	background: #fff;
+	right: 0;
+	top: 54px;
+	display: none;
+}
+.mainImg .txt {
+	display: none;
+}
+.info {
+	display: none;
+}
+
+/* Tablet & Desktop */
+/*@media all and (min-width: 601px) {
+	.gnb .btn {
+		display: none;
+	}
+	.gnb ul {
+		display: block!important;
+		top: 8px;
+	}
+	.gnb li {
+		display: inline-block;
+		border-top: none;
+	}
+	.mainImg .txt {
+		display: inline-block;
+	}
+	.con section .img {
+		float: left;
+	}
+}*/
+
+/* Tablet */
+/*@media all and (min-width: 601px) and (max-width: 992px) {
+	/*2단으로*/
+/*	.con section .img {
+		width: 50%;
+	}
+}*/
+
+/* Desktop */
+/*@media all and (min-width: 993px) {
+	/*4단으로*/
+/*	.con section .img {
+		width: 25%;
+	}
+	.info {
+		display: block;
+		margin-top: 10%;
+	}
+}*/

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=0.5, maximum-scale=2">
+	<title>Missile Warfare</title>
+<style>
+.bg {
+    display: flex;
+    justify-content: center;
+	background: url(../img/spacebackground.jpg) no-repeat center center fixed; 
+	background-size: cover;
+}
+canvas {
+	background: #000;
+	margin-top: 3%;
+}
+.a {
+	background: #000;
+	color: skyblue;
+	text-align: center;
+	font-size: 20px;
+}
+p {
+	width: 200px;
+	background: #000;
+	color: #fff;
+	text-align: center;
+	margin: 0;
+}
+</style>
+<link rel="stylesheet" href="../css/default.css">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="../js/gnb.js"></script>
+<script src="../js/spacetestver1.js"></script>
+</head>
+<body onload="start()" class="bg">
+<header class="clearfix">
+	<h1 class="p816"><a href="../index.html"><span>Jun's</span> Portfolio</a></h1>
+	<nav class="gnb">
+		<a href="#" class="btn"><span>menu</span></a>
+		<ul>
+			<li><a href="./space.html" class="p816">Missile Warfare</a></li>
+			<li><a href="./calculrator.html" class="p816">Carculator</a></li>
+		</ul>
+	</nav>
+</header>
+<div class="info">
+	<p class="a">우주선 좌표</p>
+		<p id="ss"></p>
+	<p class="a">배경 좌표</p>
+		<p id="bg"></p>
+	<p class="a">미사일 좌표</p>
+		<p id="msl"></p>
+	<p class="a">미사일 갯수</p>
+		<p id="mn"></p>
+	<p class="a">운석 좌표</p>
+		<p id="rock"></p>
+	<p class="a">운석 갯수</p>
+		<p id="rn"></p>
+</div>
+</body>
+</html>
